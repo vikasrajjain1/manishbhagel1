@@ -1,0 +1,1120 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <title>Manish Baghel | Digital Marketing Portfolio</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    colors: {
+                        palette: {
+                            dark: '#111827',       /* Deep Dark Canvas */
+                            card: '#1F2937',       /* Clean Card Surface */
+                            cardHover: '#283548',  /* Interactive Hover State */
+                            primary: '#8B5CF6',    /* Primary Violet */
+                            primaryHover: '#7C3AED',
+                            accent: '#C4B5FD',     /* Light Violet Highlight */
+                            light: '#F9FAFB',      /* Crisp Off-White Text */
+                            muted: '#6B7280',      /* Secondary Muted Gray */
+                            border: '#374151',     /* Standard Clean Borders */
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- External Custom Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-[#111827] text-[#F9FAFB] antialiased selection:bg-[#8B5CF6] selection:text-[#F9FAFB] overflow-x-hidden font-sans">
+
+    <!-- NAVIGATION BAR -->
+    <header class="fixed top-0 left-0 w-full z-50 bg-[#111827]/90 backdrop-blur-xl border-b border-[#374151]/80 transition-all duration-300">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="#hero" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-[#8B5CF6] via-[#A78BFA] to-[#C4B5FD] flex items-center justify-center text-[#111827] font-black text-lg shadow-md shadow-[#8B5CF6]/30 group-hover:scale-105 transition-transform">
+                    MB
+                </div>
+                <div>
+                    <span class="text-base sm:text-lg font-extrabold tracking-tight text-[#F9FAFB] group-hover:text-[#C4B5FD] transition-colors">Manish Baghel</span>
+                    <span class="block text-[11px] text-[#6B7280] font-medium tracking-wide">DIGITAL MARKETING PORTFOLIO</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex items-center gap-7 text-sm font-semibold text-[#D1D5DB]">
+                <a href="#about" class="hover:text-[#C4B5FD] transition-colors">about.</a>
+                <a href="#what-i-do" class="hover:text-[#C4B5FD] transition-colors">what i do.</a>
+                <a href="#experience" class="hover:text-[#C4B5FD] transition-colors">experience.</a>
+                <a href="#case-studies" class="hover:text-[#C4B5FD] transition-colors flex items-center gap-1.5">
+                    case studies.
+                    <span class="w-2 h-2 rounded-full bg-[#8B5CF6] animate-pulse"></span>
+                </a>
+                <a href="#tools" class="hover:text-[#C4B5FD] transition-colors">tools.</a>
+                <a href="#contact" class="hover:text-[#C4B5FD] transition-colors">contact.</a>
+            </nav>
+
+            <!-- Actions -->
+            <div class="hidden sm:flex items-center gap-3">
+                <a href="https://www.linkedin.com/in/manish-baghel-04bb0425a/" 
+                   target="_blank" 
+                   title="Connect on LinkedIn" 
+                   class="w-10 h-10 rounded-xl bg-[#1F2937] border border-[#374151] hover:bg-[#8B5CF6] hover:text-[#F9FAFB] text-[#C4B5FD] flex items-center justify-center transition-all shadow-sm">
+                    <i class="fa-brands fa-linkedin-in text-base"></i>
+                </a>
+                <a href="https://wa.me/919315016935?text=Hi%20Manish%2C%20I%20saw%20your%20portfolio!" 
+                   target="_blank" 
+                   class="px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold text-[#F9FAFB] bg-[#8B5CF6] hover:bg-[#7C3AED] transition-all flex items-center gap-2 shadow-lg shadow-[#8B5CF6]/30">
+                    <i class="fa-brands fa-whatsapp text-base"></i>
+                    <span>Let's Talk</span>
+                </a>
+            </div>
+
+            <!-- Mobile menu button -->
+            <button id="mobileMenuBtn" aria-label="Toggle navigation menu" class="md:hidden text-[#F9FAFB] hover:text-[#C4B5FD] p-2.5 rounded-xl border border-[#374151] bg-[#1F2937]">
+                <i class="fa-solid fa-bars text-lg"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Nav Menu -->
+        <div id="mobileMenu" class="hidden md:hidden bg-[#111827] border-b border-[#374151] px-6 py-6 space-y-4">
+            <a href="#about" class="block text-[#F9FAFB] hover:text-[#C4B5FD] font-semibold text-lg mobile-link">about.</a>
+            <a href="#what-i-do" class="block text-[#F9FAFB] hover:text-[#C4B5FD] font-semibold text-lg mobile-link">what i do.</a>
+            <a href="#experience" class="block text-[#F9FAFB] hover:text-[#C4B5FD] font-semibold text-lg mobile-link">experience.</a>
+            <a href="#case-studies" class="block text-[#F9FAFB] hover:text-[#C4B5FD] font-semibold text-lg mobile-link">case studies.</a>
+            <a href="#tools" class="block text-[#F9FAFB] hover:text-[#C4B5FD] font-semibold text-lg mobile-link">tools & platforms.</a>
+            <a href="#contact" class="block text-[#F9FAFB] hover:text-[#C4B5FD] font-semibold text-lg mobile-link">contact.</a>
+            <div class="pt-4 border-t border-[#374151] space-y-2.5">
+                <a href="https://www.linkedin.com/in/manish-baghel-04bb0425a/" target="_blank" class="w-full flex items-center justify-center gap-2 py-3 rounded-xl bg-[#1F2937] border border-[#374151] text-[#C4B5FD] font-bold text-sm">
+                    <i class="fa-brands fa-linkedin-in text-base"></i>
+                    Connect on LinkedIn
+                </a>
+                <a href="https://wa.me/919315016935?text=Hi%20Manish%2C%20I%20saw%20your%20portfolio!" target="_blank" class="w-full flex items-center justify-center gap-2 py-3 rounded-xl bg-[#8B5CF6] text-[#F9FAFB] font-bold text-sm shadow-lg shadow-[#8B5CF6]/30">
+                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                    WhatsApp Contact
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="pt-20">
+
+        <!-- ==========================================================================
+             BEHANCE STYLE HERO SECTION (Page 1 in PDF)
+             ========================================================================== -->
+        <section id="hero" class="relative pt-12 pb-16 lg:pt-16 lg:pb-20 overflow-hidden">
+            <!-- Subtle background aura -->
+            <div class="absolute top-1/3 left-1/2 -translate-x-1/2 w-[650px] h-[500px] bg-[#8B5CF6]/15 rounded-full blur-[140px] pointer-events-none"></div>
+
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+                
+                <!-- Hello Badge -->
+                <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#1F2937] border border-[#374151] text-xs sm:text-sm font-bold text-[#C4B5FD] mb-4 shadow-sm">
+                    <span>Hello!</span>
+                    <span class="text-base">👋</span>
+                </div>
+
+                <!-- Main Title & Subtitle -->
+                <h1 class="text-3xl sm:text-5xl lg:text-6xl font-black tracking-tight text-[#F9FAFB] mb-2">
+                    I'm Manish Baghel <span class="dot-accent">.</span>
+                </h1>
+                <h2 class="text-xl sm:text-3xl lg:text-4xl font-extrabold text-[#C4B5FD] tracking-tight mb-10">
+                    A Digital Marketing Specialist
+                </h2>
+
+                <!-- Center Person Visual with Floating Tag Pills (Behance layout) -->
+                <div class="relative max-w-4xl mx-auto my-6 flex items-center justify-center">
+                    
+                    <!-- Left Side Quote Box (Desktop) -->
+                    <div class="hidden lg:block absolute left-4 top-16 w-64 p-5 rounded-2xl bg-[#1F2937]/90 border border-[#374151] text-left shadow-xl">
+                        <i class="fa-solid fa-quote-left text-2xl text-[#8B5CF6] mb-2 block"></i>
+                        <p class="text-xs text-[#D1D5DB] leading-relaxed">
+                            Helping brands grow through data-driven SEO, high-ROI paid ads, lead generation, and performance marketing.
+                        </p>
+                    </div>
+
+                    <!-- Right Side Stat Callout (Desktop) -->
+                    <div class="hidden lg:block absolute right-4 top-16 text-right">
+                        <div class="text-4xl font-black text-[#F9FAFB]">3+ Years</div>
+                        <div class="text-xs font-semibold text-[#C4B5FD] tracking-wider uppercase">Digital Marketing & Growth</div>
+                    </div>
+
+                    <!-- Center Portrait Container -->
+                    <div class="relative z-10 flex justify-center">
+                        <!-- Glow behind silhouette -->
+                        <div class="absolute inset-0 bg-[#8B5CF6]/25 rounded-full blur-3xl scale-95 pointer-events-none"></div>
+                        
+                        <img src="assets/profile-nobg.png" 
+                             alt="Manish Baghel" 
+                             class="relative z-10 w-auto h-[340px] sm:h-[420px] md:h-[480px] object-contain drop-shadow-[0_25px_35px_rgba(0,0,0,0.9)]">
+                    </div>
+
+                    <!-- Floating Pill Tags Around Person (Exact Behance Amal Krishna style) -->
+                    <!-- Tag 1: Top Left -->
+                    <div class="absolute top-2 sm:top-6 left-2 sm:left-24 z-20 px-3.5 py-1.5 rounded-full bg-[#1F2937]/95 border border-[#8B5CF6]/50 text-[#F9FAFB] text-[11px] sm:text-xs font-bold shadow-lg flex items-center gap-1.5 backdrop-blur-md">
+                        <i class="fa-solid fa-magnifying-glass text-[#8B5CF6] text-[10px]"></i>
+                        <span>SEO & SERP</span>
+                    </div>
+
+                    <!-- Tag 2: Top Right -->
+                    <div class="absolute top-2 sm:top-6 right-2 sm:right-24 z-20 px-3.5 py-1.5 rounded-full bg-[#1F2937]/95 border border-[#8B5CF6]/50 text-[#F9FAFB] text-[11px] sm:text-xs font-bold shadow-lg flex items-center gap-1.5 backdrop-blur-md">
+                        <i class="fa-brands fa-meta text-[#8B5CF6] text-[10px]"></i>
+                        <span>Meta Ads</span>
+                    </div>
+
+                    <!-- Tag 3: Middle Left -->
+                    <div class="absolute top-1/2 -translate-y-1/2 left-0 sm:left-12 z-20 px-3.5 py-1.5 rounded-full bg-[#1F2937]/95 border border-[#374151] text-[#C4B5FD] text-[11px] sm:text-xs font-bold shadow-lg flex items-center gap-1.5 backdrop-blur-md">
+                        <i class="fa-solid fa-chart-line text-[#8B5CF6] text-[10px]"></i>
+                        <span>Analytics</span>
+                    </div>
+
+                    <!-- Tag 4: Middle Right -->
+                    <div class="absolute top-1/2 -translate-y-1/2 right-0 sm:right-12 z-20 px-3.5 py-1.5 rounded-full bg-[#1F2937]/95 border border-[#374151] text-[#C4B5FD] text-[11px] sm:text-xs font-bold shadow-lg flex items-center gap-1.5 backdrop-blur-md">
+                        <i class="fa-solid fa-bullseye text-[#8B5CF6] text-[10px]"></i>
+                        <span>Performance Marketing</span>
+                    </div>
+
+                    <!-- Tag 5: Bottom Left -->
+                    <div class="absolute bottom-6 sm:bottom-12 left-4 sm:left-20 z-20 px-3.5 py-1.5 rounded-full bg-[#1F2937]/95 border border-[#8B5CF6]/50 text-[#F9FAFB] text-[11px] sm:text-xs font-bold shadow-lg flex items-center gap-1.5 backdrop-blur-md">
+                        <i class="fa-solid fa-share-nodes text-[#8B5CF6] text-[10px]"></i>
+                        <span>Social Media</span>
+                    </div>
+
+                    <!-- Tag 6: Bottom Right -->
+                    <div class="absolute bottom-6 sm:bottom-12 right-4 sm:right-20 z-20 px-3.5 py-1.5 rounded-full bg-[#1F2937]/95 border border-[#8B5CF6]/50 text-[#F9FAFB] text-[11px] sm:text-xs font-bold shadow-lg flex items-center gap-1.5 backdrop-blur-md">
+                        <i class="fa-solid fa-film text-[#8B5CF6] text-[10px]"></i>
+                        <span>Video Editing</span>
+                    </div>
+
+                </div>
+
+                <!-- KEY METRIC STRIP BANNER (Page 1 in PDF) -->
+                <div class="mt-8 max-w-4xl mx-auto rounded-2xl bg-[#1F2937] border border-[#374151] p-4 sm:p-5 shadow-2xl">
+                    <div class="grid grid-cols-2 sm:grid-cols-5 gap-4 divide-y sm:divide-y-0 sm:divide-x divide-[#374151] text-center">
+                        <div class="p-2">
+                            <div class="text-xl sm:text-2xl font-black text-[#F9FAFB] flex items-center justify-center gap-1.5">
+                                <i class="fa-solid fa-chart-pie text-xs text-[#8B5CF6]"></i>
+                                <span>₹10L+</span>
+                            </div>
+                            <div class="text-[11px] text-[#9CA3AF] font-medium mt-1">Ad Spend Managed</div>
+                        </div>
+
+                        <div class="p-2 pt-4 sm:pt-2">
+                            <div class="text-xl sm:text-2xl font-black text-[#F9FAFB] flex items-center justify-center gap-1.5">
+                                <i class="fa-solid fa-arrow-trend-up text-xs text-[#C4B5FD]"></i>
+                                <span>100%+</span>
+                            </div>
+                            <div class="text-[11px] text-[#9CA3AF] font-medium mt-1">Organic Traffic</div>
+                        </div>
+
+                        <div class="p-2 pt-4 sm:pt-2">
+                            <div class="text-xl sm:text-2xl font-black text-[#F9FAFB] flex items-center justify-center gap-1.5">
+                                <i class="fa-solid fa-briefcase text-xs text-[#8B5CF6]"></i>
+                                <span>4+</span>
+                            </div>
+                            <div class="text-[11px] text-[#9CA3AF] font-medium mt-1">Brands Managed</div>
+                        </div>
+
+                        <div class="p-2 pt-4 sm:pt-2">
+                            <div class="text-xl sm:text-2xl font-black text-[#F9FAFB] flex items-center justify-center gap-1.5">
+                                <i class="fa-solid fa-bullhorn text-xs text-[#C4B5FD]"></i>
+                                <span>15+</span>
+                            </div>
+                            <div class="text-[11px] text-[#9CA3AF] font-medium mt-1">Campaigns Done</div>
+                        </div>
+
+                        <div class="col-span-2 sm:col-span-1 p-2 pt-4 sm:pt-2">
+                            <div class="text-xl sm:text-2xl font-black text-[#F9FAFB] flex items-center justify-center gap-1.5">
+                                <i class="fa-solid fa-medal text-xs text-[#8B5CF6]"></i>
+                                <span>3+</span>
+                            </div>
+                            <div class="text-[11px] text-[#9CA3AF] font-medium mt-1">Years Experience</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- MARQUEE RIBBON (Page 1 in PDF) -->
+            <div class="mt-14 py-3 bg-[#1F2937]/80 border-y border-[#374151] overflow-hidden">
+                <div class="animate-marquee whitespace-nowrap text-xs sm:text-sm font-extrabold uppercase tracking-widest text-[#C4B5FD]">
+                    <span class="mx-6">SEO STRATEGY <span class="text-[#8B5CF6]">✦</span></span>
+                    <span class="mx-6">META ADS <span class="text-[#8B5CF6]">✦</span></span>
+                    <span class="mx-6">LEAD GENERATION <span class="text-[#8B5CF6]">✦</span></span>
+                    <span class="mx-6">VIDEO EDITING <span class="text-[#8B5CF6]">✦</span></span>
+                    <span class="mx-6">PERFORMANCE MARKETING <span class="text-[#8B5CF6]">✦</span></span>
+                    <span class="mx-6">SOCIAL MEDIA <span class="text-[#8B5CF6]">✦</span></span>
+                    <span class="mx-6">CONTENT STRATEGY <span class="text-[#8B5CF6]">✦</span></span>
+                    <span class="mx-6">YOUTUBE GROWTH <span class="text-[#8B5CF6]">✦</span></span>
+                    <!-- Duplicate for infinite marquee loop -->
+                    <span class="mx-6">SEO STRATEGY <span class="text-[#8B5CF6]">✦</span></span>
+                    <span class="mx-6">META ADS <span class="text-[#8B5CF6]">✦</span></span>
+                    <span class="mx-6">LEAD GENERATION <span class="text-[#8B5CF6]">✦</span></span>
+                    <span class="mx-6">VIDEO EDITING <span class="text-[#8B5CF6]">✦</span></span>
+                    <span class="mx-6">PERFORMANCE MARKETING <span class="text-[#8B5CF6]">✦</span></span>
+                    <span class="mx-6">SOCIAL MEDIA <span class="text-[#8B5CF6]">✦</span></span>
+                    <span class="mx-6">CONTENT STRATEGY <span class="text-[#8B5CF6]">✦</span></span>
+                    <span class="mx-6">YOUTUBE GROWTH <span class="text-[#8B5CF6]">✦</span></span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================================================
+             ABOUT SECTION (Page 1 in PDF)
+             ========================================================================== -->
+        <section id="about" class="py-16 sm:py-24 border-b border-[#374151]/80">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+                    
+                    <div class="lg:col-span-8 space-y-6">
+                        <h2 class="text-4xl sm:text-5xl font-black text-[#F9FAFB]">
+                            about <span class="dot-accent">.</span>
+                        </h2>
+
+                        <p class="text-sm sm:text-base text-[#D1D5DB] leading-relaxed">
+                            Hi, I'm <strong class="text-[#F9FAFB]">Manish Baghel</strong>, a Digital Marketing Executive with <span class="text-[#C4B5FD] font-bold border-b border-[#8B5CF6]">over 3+ years of experience in SEO, Meta Ads, Paid Performance Marketing, and Video Editing</span>.
+                        </p>
+
+                        <p class="text-sm sm:text-base text-[#9CA3AF] leading-relaxed">
+                            I have worked with brands across <strong class="text-[#F9FAFB]">automotive, e-commerce fashion, and digital agency verticals</strong>, helping businesses increase organic SERP visibility, run high-converting paid social ads, and achieve measurable growth through strategic digital marketing campaigns.
+                        </p>
+
+                        <p class="text-sm sm:text-base text-[#9CA3AF] leading-relaxed">
+                            My expertise covers On-Page & Technical SEO, Meta Ads Manager, Campaign Optimization, Adobe Premiere Pro & Filmora video editing, and Growth Analytics. I am passionate about combining creative content with data-driven execution to deliver business impact.
+                        </p>
+
+                        <div class="pt-2 flex flex-wrap gap-3">
+                            <span class="px-3 py-1.5 rounded-xl bg-[#1F2937] border border-[#374151] text-xs font-semibold text-[#C4B5FD]">
+                                📍 Delhi, India
+                            </span>
+                            <span class="px-3 py-1.5 rounded-xl bg-[#1F2937] border border-[#374151] text-xs font-semibold text-[#C4B5FD]">
+                                🗣️ English & Hindi
+                            </span>
+                            <span class="px-3 py-1.5 rounded-xl bg-[#8B5CF6]/20 border border-[#8B5CF6]/40 text-xs font-bold text-[#F9FAFB]">
+                                ⚡ Available Immediately
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- Right Portrait Highlight Card -->
+                    <div class="lg:col-span-4 flex justify-center">
+                        <div class="p-4 rounded-3xl bg-[#1F2937] border border-[#374151] shadow-2xl text-center w-full max-w-xs">
+                            <div class="rounded-2xl overflow-hidden bg-gradient-to-b from-[#111827] to-[#1F2937] p-4 flex justify-center mb-4">
+                                <img src="assets/profile-nobg.png" alt="Manish Baghel" class="h-60 object-contain drop-shadow-xl">
+                            </div>
+                            <h3 class="font-extrabold text-[#F9FAFB] text-base">Manish Baghel</h3>
+                            <p class="text-xs text-[#8B5CF6] font-semibold">Growth Marketer & SEO</p>
+                            <p class="text-[11px] text-[#6B7280] mt-1">Delivering measurable ROI</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================================================
+             WHAT I DO (Page 2 in PDF - Numbered 01 to 06)
+             ========================================================================== -->
+        <section id="what-i-do" class="py-16 sm:py-24 border-b border-[#374151]/80 bg-[#161F30]/30">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-12">
+                    <div>
+                        <h2 class="text-4xl sm:text-5xl font-black text-[#F9FAFB]">
+                            what i do <span class="dot-accent">.</span>
+                        </h2>
+                    </div>
+                    <p class="text-xs sm:text-sm text-[#9CA3AF] max-w-md">
+                        I help businesses grow through technical search optimization, performance advertising, video creation, and data-driven campaigns that generate measurable results.
+                    </p>
+                </div>
+
+                <!-- 6 Numbered Cards Grid (Exact Behance Amal Krishna 01-06 format) -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                    <!-- 01 META ADS -->
+                    <div class="behance-card p-6 sm:p-7 rounded-3xl bg-[#1F2937] border border-[#374151] relative flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="text-3xl font-black text-[#8B5CF6]">01</span>
+                                <div class="w-10 h-10 rounded-xl bg-[#8B5CF6]/15 text-[#C4B5FD] flex items-center justify-center text-lg">
+                                    <i class="fa-brands fa-meta"></i>
+                                </div>
+                            </div>
+                            <h3 class="text-xl font-black text-[#F9FAFB] mb-2 uppercase tracking-wide">Meta Ads</h3>
+                            <p class="text-xs text-[#9CA3AF] leading-relaxed">
+                                Create and optimize Facebook & Instagram ad campaigns that drive qualified leads, reach, and business growth.
+                            </p>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-[#374151] text-[11px] font-bold text-[#C4B5FD]">
+                            Audience Segmentation • A/B Testing
+                        </div>
+                    </div>
+
+                    <!-- 02 ADVANCED SEO & SERP -->
+                    <div class="behance-card p-6 sm:p-7 rounded-3xl bg-[#1F2937] border border-[#374151] relative flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="text-3xl font-black text-[#C4B5FD]">02</span>
+                                <div class="w-10 h-10 rounded-xl bg-[#8B5CF6]/15 text-[#C4B5FD] flex items-center justify-center text-lg">
+                                    <i class="fa-solid fa-magnifying-glass-chart"></i>
+                                </div>
+                            </div>
+                            <h3 class="text-xl font-black text-[#F9FAFB] mb-2 uppercase tracking-wide">SEO & SERP</h3>
+                            <p class="text-xs text-[#9CA3AF] leading-relaxed">
+                                Keyword research, backlink analysis, technical on-page fixes, sitemaps, robots.txt, and continuous search ranking.
+                            </p>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-[#374151] text-[11px] font-bold text-[#C4B5FD]">
+                            On-Page • Technical • Competitor Gap
+                        </div>
+                    </div>
+
+                    <!-- 03 LEAD GENERATION -->
+                    <div class="behance-card p-6 sm:p-7 rounded-3xl bg-[#1F2937] border border-[#374151] relative flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="text-3xl font-black text-[#8B5CF6]">03</span>
+                                <div class="w-10 h-10 rounded-xl bg-[#8B5CF6]/15 text-[#C4B5FD] flex items-center justify-center text-lg">
+                                    <i class="fa-solid fa-bullseye"></i>
+                                </div>
+                            </div>
+                            <h3 class="text-xl font-black text-[#F9FAFB] mb-2 uppercase tracking-wide">Lead Generation</h3>
+                            <p class="text-xs text-[#9CA3AF] leading-relaxed">
+                                Build targeted high-intent funnels that convert cold prospects into quality WhatsApp, call, and web inquiries.
+                            </p>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-[#374151] text-[11px] font-bold text-[#C4B5FD]">
+                            Conversion Funnels • Cost Per Lead
+                        </div>
+                    </div>
+
+                    <!-- 04 VIDEO EDITING & REELS -->
+                    <div class="behance-card p-6 sm:p-7 rounded-3xl bg-[#1F2937] border border-[#374151] relative flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="text-3xl font-black text-[#C4B5FD]">04</span>
+                                <div class="w-10 h-10 rounded-xl bg-[#8B5CF6]/15 text-[#C4B5FD] flex items-center justify-center text-lg">
+                                    <i class="fa-solid fa-film"></i>
+                                </div>
+                            </div>
+                            <h3 class="text-xl font-black text-[#F9FAFB] mb-2 uppercase tracking-wide">Video Editing</h3>
+                            <p class="text-xs text-[#9CA3AF] leading-relaxed">
+                                High-retention video production in Premiere Pro & Filmora for viral Instagram Reels, YouTube videos & ads.
+                            </p>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-[#374151] text-[11px] font-bold text-[#C4B5FD]">
+                            Adobe Premiere Pro • Filmora • Movavi
+                        </div>
+                    </div>
+
+                    <!-- 05 SOCIAL MEDIA MARKETING -->
+                    <div class="behance-card p-6 sm:p-7 rounded-3xl bg-[#1F2937] border border-[#374151] relative flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="text-3xl font-black text-[#8B5CF6]">05</span>
+                                <div class="w-10 h-10 rounded-xl bg-[#8B5CF6]/15 text-[#C4B5FD] flex items-center justify-center text-lg">
+                                    <i class="fa-solid fa-share-nodes"></i>
+                                </div>
+                            </div>
+                            <h3 class="text-xl font-black text-[#F9FAFB] mb-2 uppercase tracking-wide">Social Media</h3>
+                            <p class="text-xs text-[#9CA3AF] leading-relaxed">
+                                Content calendars, multi-platform brand presence, engagement growth across Instagram, LinkedIn, and YouTube.
+                            </p>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-[#374151] text-[11px] font-bold text-[#C4B5FD]">
+                            Content Strategy • Community Growth
+                        </div>
+                    </div>
+
+                    <!-- 06 MARKETING ANALYTICS -->
+                    <div class="behance-card p-6 sm:p-7 rounded-3xl bg-[#1F2937] border border-[#374151] relative flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="text-3xl font-black text-[#C4B5FD]">06</span>
+                                <div class="w-10 h-10 rounded-xl bg-[#8B5CF6]/15 text-[#C4B5FD] flex items-center justify-center text-lg">
+                                    <i class="fa-solid fa-chart-simple"></i>
+                                </div>
+                            </div>
+                            <h3 class="text-xl font-black text-[#F9FAFB] mb-2 uppercase tracking-wide">Marketing Analytics</h3>
+                            <p class="text-xs text-[#9CA3AF] leading-relaxed">
+                                Turn data into revenue insights. Performance tracking with Google Analytics 4, Search Console & SEMrush.
+                            </p>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-[#374151] text-[11px] font-bold text-[#C4B5FD]">
+                            GA4 • GSC • SEMrush • Ahrefs
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ==========================================================================
+             EXPERIENCE & EDUCATION (Side-by-side split, Page 2 in PDF)
+             ========================================================================== -->
+        <section id="experience" class="py-16 sm:py-24 border-b border-[#374151]/80">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+                    
+                    <!-- Left Column: EXPERIENCE (7 cols) -->
+                    <div class="lg:col-span-7 space-y-8">
+                        <div>
+                            <h2 class="text-4xl sm:text-5xl font-black text-[#F9FAFB]">
+                                experience <span class="dot-accent">.</span>
+                            </h2>
+                        </div>
+
+                        <div class="space-y-6">
+                            
+                            <!-- Role 1: Sipl Automotives -->
+                            <div class="p-6 rounded-3xl bg-[#1F2937] border border-[#374151] space-y-3">
+                                <div class="flex items-start justify-between flex-wrap gap-2">
+                                    <div>
+                                        <h3 class="text-lg font-black text-[#F9FAFB]">DIGITAL MARKETING EXECUTIVE</h3>
+                                        <div class="text-xs font-bold text-[#C4B5FD]">Sipl Automotives</div>
+                                    </div>
+                                    <span class="text-xs font-bold px-3 py-1 rounded-full bg-[#8B5CF6]/20 text-[#C4B5FD] border border-[#8B5CF6]/40">
+                                        Apr 2026 – Present
+                                    </span>
+                                </div>
+                                <ul class="text-xs text-[#D1D5DB] space-y-1.5 list-disc list-inside leading-relaxed">
+                                    <li>Manage SEO strategy and execution to improve organic search visibility and rankings.</li>
+                                    <li>Plan, set up, and optimize Meta Ads (Facebook & Instagram) campaigns to drive leads.</li>
+                                    <li>Handle end-to-end social media management and monitor analytics.</li>
+                                </ul>
+                            </div>
+
+                            <!-- Role 2: Vmitr -->
+                            <div class="p-6 rounded-3xl bg-[#1F2937] border border-[#374151] space-y-3">
+                                <div class="flex items-start justify-between flex-wrap gap-2">
+                                    <div>
+                                        <h3 class="text-lg font-black text-[#F9FAFB]">DIGITAL MARKETING EXECUTIVE</h3>
+                                        <div class="text-xs font-bold text-[#C4B5FD]">Vmitr - Vyapar Network International</div>
+                                    </div>
+                                    <span class="text-xs font-bold px-3 py-1 rounded-full bg-[#111827] text-[#9CA3AF] border border-[#374151]">
+                                        Apr 2025 – Mar 2026
+                                    </span>
+                                </div>
+                                <ul class="text-xs text-[#D1D5DB] space-y-1.5 list-disc list-inside leading-relaxed">
+                                    <li>Led videography & video editing efforts to create creative branding assets.</li>
+                                    <li>Managed full digital marketing operations and re-branding initiatives.</li>
+                                    <li>Improved SERP rankings, executed content calendar, and managed email campaigns.</li>
+                                </ul>
+                            </div>
+
+                            <!-- Role 3: High in Digital -->
+                            <div class="p-6 rounded-3xl bg-[#1F2937] border border-[#374151] space-y-3">
+                                <div class="flex items-start justify-between flex-wrap gap-2">
+                                    <div>
+                                        <h3 class="text-lg font-black text-[#F9FAFB]">SOCIAL MEDIA EXECUTIVE</h3>
+                                        <div class="text-xs font-bold text-[#C4B5FD]">High in Digital</div>
+                                    </div>
+                                    <span class="text-xs font-bold px-3 py-1 rounded-full bg-[#111827] text-[#9CA3AF] border border-[#374151]">
+                                        Apr 2023 – Mar 2025
+                                    </span>
+                                </div>
+                                <ul class="text-xs text-[#D1D5DB] space-y-1.5 list-disc list-inside leading-relaxed">
+                                    <li>Handled social programs across FB, Instagram, YouTube, Pinterest, LinkedIn & Twitter.</li>
+                                    <li>Gained strong YouTube marketing expertise, resulting in successfully monetized channels.</li>
+                                    <li>Collaborated with team and clients on creative campaign ideation and analytics reporting.</li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Right Column: EDUCATION (5 cols) -->
+                    <div class="lg:col-span-5 space-y-8">
+                        <div>
+                            <h2 class="text-4xl sm:text-5xl font-black text-[#F9FAFB]">
+                                education <span class="dot-accent">.</span>
+                            </h2>
+                        </div>
+
+                        <div class="p-6 sm:p-8 rounded-3xl bg-[#1F2937] border border-[#374151] space-y-6">
+                            
+                            <!-- Edu Item 1 -->
+                            <div class="pb-5 border-b border-[#374151] space-y-1">
+                                <div class="flex justify-between items-center text-xs font-bold text-[#8B5CF6]">
+                                    <span>2023 – 2026</span>
+                                </div>
+                                <h3 class="text-base font-extrabold text-[#F9FAFB]">GRADUATION (B.A. PROGRAMME)</h3>
+                                <p class="text-xs text-[#9CA3AF]">Indira Gandhi National Open University (IGNOU)</p>
+                            </div>
+
+                            <!-- Edu Item 2 -->
+                            <div class="pb-5 border-b border-[#374151] space-y-1">
+                                <div class="text-xs font-bold text-[#C4B5FD]">CBSE BOARD</div>
+                                <h3 class="text-base font-extrabold text-[#F9FAFB]">12TH SENIOR SECONDARY</h3>
+                                <p class="text-xs text-[#9CA3AF]">CBSE Board, Delhi</p>
+                            </div>
+
+                            <!-- Edu Item 3 -->
+                            <div class="space-y-1">
+                                <div class="text-xs font-bold text-[#C4B5FD]">CBSE BOARD</div>
+                                <h3 class="text-base font-extrabold text-[#F9FAFB]">10TH SECONDARY SCHOOL</h3>
+                                <p class="text-xs text-[#9CA3AF]">CBSE Board, Delhi</p>
+                            </div>
+
+                            <div class="pt-4 border-t border-[#374151] text-xs text-[#D1D5DB] italic">
+                                "Every experience has shaped my analytical approach to digital marketing and scalable brand growth."
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ==========================================================================
+             CASE STUDIES SECTION (Pages 3 to 10 in PDF)
+             ========================================================================== -->
+        <section id="case-studies" class="py-16 sm:py-24 border-b border-[#374151]/80 bg-[#161F30]/30">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-14">
+                    <div>
+                        <h2 class="text-4xl sm:text-5xl font-black text-[#F9FAFB]">
+                            case studies <span class="dot-accent">.</span>
+                        </h2>
+                    </div>
+                    <p class="text-xs sm:text-sm text-[#9CA3AF] max-w-md">
+                        Selected projects showcasing strategy, creativity, and measurable business growth.
+                    </p>
+                </div>
+
+                <!-- Featured Client Brand Badges (Page 3 in PDF) -->
+                <div class="p-5 sm:p-6 rounded-3xl bg-[#1F2937] border border-[#374151] mb-12">
+                    <div class="text-xs font-extrabold uppercase tracking-wider text-[#6B7280] mb-4 text-center">
+                        FEATURED CASE STUDIES
+                    </div>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+                        <div class="p-4 rounded-2xl bg-[#111827] border border-[#8B5CF6]/50">
+                            <div class="text-base font-extrabold text-[#F9FAFB]">SIPL</div>
+                            <div class="text-[11px] text-[#C4B5FD]">Automotives & Tech</div>
+                        </div>
+                        <div class="p-4 rounded-2xl bg-[#111827] border border-[#374151]">
+                            <div class="text-base font-extrabold text-[#F9FAFB]">KEIZO</div>
+                            <div class="text-[11px] text-[#9CA3AF]">Fashion & E-Commerce</div>
+                        </div>
+                        <div class="p-4 rounded-2xl bg-[#111827] border border-[#374151]">
+                            <div class="text-base font-extrabold text-[#F9FAFB]">VMITR</div>
+                            <div class="text-[11px] text-[#9CA3AF]">Vyapar Network</div>
+                        </div>
+                        <div class="p-4 rounded-2xl bg-[#111827] border border-[#374151]">
+                            <div class="text-base font-extrabold text-[#F9FAFB]">HIGH IN DIGITAL</div>
+                            <div class="text-[11px] text-[#9CA3AF]">Digital Agency</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space-y-16">
+
+                    <!-- ==========================================
+                         CASE STUDY 1: SIPL AUTOMOTIVES (Page 3 & 4 style)
+                         ========================================== -->
+                    <div class="p-6 sm:p-10 rounded-3xl bg-[#1F2937] border border-[#374151] shadow-2xl space-y-8">
+                        
+                        <!-- Header -->
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-6 border-b border-[#374151]">
+                            <div>
+                                <h3 class="text-3xl sm:text-4xl font-black text-[#F9FAFB]">
+                                    sipl automotives <span class="dot-accent">.</span>
+                                </h3>
+                                <p class="text-xs sm:text-sm text-[#C4B5FD] font-semibold mt-1">
+                                    Automotive Manufacturing, Technology & Spare Parts
+                                </p>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <a href="https://siplautomotives.com/" target="_blank" class="px-4 py-2 rounded-xl bg-[#8B5CF6] hover:bg-[#7C3AED] text-[#F9FAFB] text-xs font-bold flex items-center gap-1.5 transition-all shadow-md">
+                                    <span>Live Website</span>
+                                    <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                                </a>
+                                <div class="flex items-center gap-1.5">
+                                    <a href="https://www.instagram.com/sipl_automotives/" target="_blank" class="w-8 h-8 rounded-lg bg-[#111827] text-[#C4B5FD] hover:text-[#F9FAFB] flex items-center justify-center text-sm border border-[#374151]">
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </a>
+                                    <a href="https://www.linkedin.com/company/sipl-automotives/?originalSubdomain=in" target="_blank" class="w-8 h-8 rounded-lg bg-[#111827] text-[#C4B5FD] hover:text-[#F9FAFB] flex items-center justify-center text-sm border border-[#374151]">
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                    </a>
+                                    <a href="https://www.facebook.com/siplpro" target="_blank" class="w-8 h-8 rounded-lg bg-[#111827] text-[#C4B5FD] hover:text-[#F9FAFB] flex items-center justify-center text-sm border border-[#374151]">
+                                        <i class="fa-brands fa-facebook-f"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project Overview Table (Exact Behance Page 3 Table Box) -->
+                        <div>
+                            <div class="text-xs font-black uppercase tracking-wider text-[#6B7280] mb-3">
+                                PROJECT OVERVIEW
+                            </div>
+                            <div class="rounded-2xl bg-[#111827] border border-[#374151] p-5 sm:p-6">
+                                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 divide-y sm:divide-y-0 sm:divide-x divide-[#374151]">
+                                    
+                                    <div class="pt-2 sm:pt-0 sm:pr-4">
+                                        <div class="text-xs font-extrabold text-[#C4B5FD] uppercase mb-2">My Role</div>
+                                        <ul class="text-xs text-[#D1D5DB] space-y-1">
+                                            <li>• SEO Strategy & Audits</li>
+                                            <li>• Meta Ads Lead Funnel</li>
+                                            <li>• Social Media Head</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="pt-4 sm:pt-0 sm:px-4">
+                                        <div class="text-xs font-extrabold text-[#C4B5FD] uppercase mb-2">Services Provided</div>
+                                        <ul class="text-xs text-[#D1D5DB] space-y-1">
+                                            <li>• Technical On-Page SEO</li>
+                                            <li>• Paid Meta Advertising</li>
+                                            <li>• Lead Generation</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="pt-4 sm:pt-0 sm:px-4">
+                                        <div class="text-xs font-extrabold text-[#C4B5FD] uppercase mb-2">Platforms Used</div>
+                                        <div class="flex items-center gap-2 pt-1 text-base text-[#D1D5DB]">
+                                            <i class="fa-brands fa-meta text-[#8B5CF6]"></i>
+                                            <i class="fa-brands fa-instagram text-[#C4B5FD]"></i>
+                                            <i class="fa-brands fa-linkedin text-[#8B5CF6]"></i>
+                                            <i class="fa-brands fa-google text-[#C4B5FD]"></i>
+                                        </div>
+                                    </div>
+
+                                    <div class="pt-4 sm:pt-0 sm:pl-4">
+                                        <div class="text-xs font-extrabold text-[#C4B5FD] uppercase mb-2">Key Results</div>
+                                        <ul class="text-xs text-[#D1D5DB] space-y-1">
+                                            <li>• 100%+ Organic Reach</li>
+                                            <li>• Top 3 SERP Rankings</li>
+                                            <li>• High-Intent Inquiries</li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Campaign Performance & Results Callout (Behance Page 4 Stat Box) -->
+                        <div>
+                            <div class="text-xs font-black uppercase tracking-wider text-[#6B7280] mb-3">
+                                CAMPAIGN PERFORMANCE & METRICS
+                            </div>
+                            <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 text-center">
+                                <div class="p-4 rounded-2xl bg-[#111827] border border-[#374151]">
+                                    <div class="text-2xl sm:text-3xl font-black text-[#8B5CF6]">500+</div>
+                                    <div class="text-[11px] text-[#9CA3AF] mt-1 font-medium">B2B Leads Generated</div>
+                                </div>
+                                <div class="p-4 rounded-2xl bg-[#111827] border border-[#374151]">
+                                    <div class="text-2xl sm:text-3xl font-black text-[#C4B5FD]">Top 3</div>
+                                    <div class="text-[11px] text-[#9CA3AF] mt-1 font-medium">Google Page Rankings</div>
+                                </div>
+                                <div class="p-4 rounded-2xl bg-[#111827] border border-[#374151]">
+                                    <div class="text-2xl sm:text-3xl font-black text-[#8B5CF6]">₹24.50</div>
+                                    <div class="text-[11px] text-[#9CA3AF] mt-1 font-medium">Cost Per Lead (CPL)</div>
+                                </div>
+                                <div class="p-4 rounded-2xl bg-[#111827] border border-[#374151]">
+                                    <div class="text-2xl sm:text-3xl font-black text-[#C4B5FD]">120K+</div>
+                                    <div class="text-[11px] text-[#9CA3AF] mt-1 font-medium">Organic Impressions</div>
+                                </div>
+                            </div>
+
+                            <!-- Key Insight Box (Exact Behance Page 4 Callout) -->
+                            <div class="mt-4 p-4 rounded-2xl bg-[#111827]/70 border border-[#8B5CF6]/30">
+                                <span class="text-xs font-black uppercase text-[#8B5CF6] block mb-1">Key Insight:</span>
+                                <p class="text-xs text-[#D1D5DB] leading-relaxed">
+                                    Combining deep technical on-page SEO with targeted Meta lead-form campaigns delivered consistent B2B customer inquiries while maintaining cost-effective ad spend.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <!-- ==========================================
+                         CASE STUDY 2: KEIZO LONDON (Page 6 & 7 style)
+                         ========================================== -->
+                    <div class="p-6 sm:p-10 rounded-3xl bg-[#1F2937] border border-[#374151] shadow-2xl space-y-8">
+                        
+                        <!-- Header -->
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-6 border-b border-[#374151]">
+                            <div>
+                                <h3 class="text-3xl sm:text-4xl font-black text-[#F9FAFB]">
+                                    keizo london <span class="dot-accent">.</span>
+                                </h3>
+                                <p class="text-xs sm:text-sm text-[#C4B5FD] font-semibold mt-1">
+                                    Premium Lifestyle, Fashion & E-Commerce Brand
+                                </p>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <a href="https://keizo.in/" target="_blank" class="px-4 py-2 rounded-xl bg-[#8B5CF6] hover:bg-[#7C3AED] text-[#F9FAFB] text-xs font-bold flex items-center gap-1.5 transition-all shadow-md">
+                                    <span>Live Store</span>
+                                    <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                                </a>
+                                <div class="flex items-center gap-1.5">
+                                    <a href="https://www.instagram.com/mykeizo/" target="_blank" class="w-8 h-8 rounded-lg bg-[#111827] text-[#C4B5FD] hover:text-[#F9FAFB] flex items-center justify-center text-sm border border-[#374151]">
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </a>
+                                    <a href="https://www.youtube.com/@mykeizo" target="_blank" class="w-8 h-8 rounded-lg bg-[#111827] text-[#C4B5FD] hover:text-[#F9FAFB] flex items-center justify-center text-sm border border-[#374151]">
+                                        <i class="fa-brands fa-youtube"></i>
+                                    </a>
+                                    <a href="https://x.com/keizo_london" target="_blank" class="w-8 h-8 rounded-lg bg-[#111827] text-[#C4B5FD] hover:text-[#F9FAFB] flex items-center justify-center text-sm border border-[#374151]">
+                                        <i class="fa-brands fa-x-twitter"></i>
+                                    </a>
+                                    <a href="https://www.facebook.com/officialkeizolondon" target="_blank" class="w-8 h-8 rounded-lg bg-[#111827] text-[#C4B5FD] hover:text-[#F9FAFB] flex items-center justify-center text-sm border border-[#374151]">
+                                        <i class="fa-brands fa-facebook-f"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project Overview Table -->
+                        <div>
+                            <div class="text-xs font-black uppercase tracking-wider text-[#6B7280] mb-3">
+                                PROJECT OVERVIEW
+                            </div>
+                            <div class="rounded-2xl bg-[#111827] border border-[#374151] p-5 sm:p-6">
+                                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 divide-y sm:divide-y-0 sm:divide-x divide-[#374151]">
+                                    
+                                    <div class="pt-2 sm:pt-0 sm:pr-4">
+                                        <div class="text-xs font-extrabold text-[#C4B5FD] uppercase mb-2">My Role</div>
+                                        <ul class="text-xs text-[#D1D5DB] space-y-1">
+                                            <li>• Growth Specialist</li>
+                                            <li>• YouTube Video Head</li>
+                                            <li>• Social Campaign Strategy</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="pt-4 sm:pt-0 sm:px-4">
+                                        <div class="text-xs font-extrabold text-[#C4B5FD] uppercase mb-2">Services Provided</div>
+                                        <ul class="text-xs text-[#D1D5DB] space-y-1">
+                                            <li>• Video Marketing</li>
+                                            <li>• Omnichannel Content</li>
+                                            <li>• E-commerce Brand Building</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="pt-4 sm:pt-0 sm:px-4">
+                                        <div class="text-xs font-extrabold text-[#C4B5FD] uppercase mb-2">Platforms Used</div>
+                                        <div class="flex items-center gap-2 pt-1 text-base text-[#D1D5DB]">
+                                            <i class="fa-brands fa-instagram text-[#8B5CF6]"></i>
+                                            <i class="fa-brands fa-youtube text-[#C4B5FD]"></i>
+                                            <i class="fa-brands fa-x-twitter text-[#8B5CF6]"></i>
+                                            <i class="fa-brands fa-shopify text-[#C4B5FD]"></i>
+                                        </div>
+                                    </div>
+
+                                    <div class="pt-4 sm:pt-0 sm:pl-4">
+                                        <div class="text-xs font-extrabold text-[#C4B5FD] uppercase mb-2">Key Results</div>
+                                        <ul class="text-xs text-[#D1D5DB] space-y-1">
+                                            <li>• 3.8x E-Commerce Traffic</li>
+                                            <li>• High-Engagement Reels</li>
+                                            <li>• Consistent Inquiries</li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Campaign Performance & Results Callout -->
+                        <div>
+                            <div class="text-xs font-black uppercase tracking-wider text-[#6B7280] mb-3">
+                                CAMPAIGN PERFORMANCE & METRICS
+                            </div>
+                            <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 text-center">
+                                <div class="p-4 rounded-2xl bg-[#111827] border border-[#374151]">
+                                    <div class="text-2xl sm:text-3xl font-black text-[#8B5CF6]">240K+</div>
+                                    <div class="text-[11px] text-[#9CA3AF] mt-1 font-medium">Total Video Views</div>
+                                </div>
+                                <div class="p-4 rounded-2xl bg-[#111827] border border-[#374151]">
+                                    <div class="text-2xl sm:text-3xl font-black text-[#C4B5FD]">45%</div>
+                                    <div class="text-[11px] text-[#9CA3AF] mt-1 font-medium">Higher Engagement Rate</div>
+                                </div>
+                                <div class="p-4 rounded-2xl bg-[#111827] border border-[#374151]">
+                                    <div class="text-2xl sm:text-3xl font-black text-[#8B5CF6]">3.8X</div>
+                                    <div class="text-[11px] text-[#9CA3AF] mt-1 font-medium">Store Traffic Growth</div>
+                                </div>
+                                <div class="p-4 rounded-2xl bg-[#111827] border border-[#374151]">
+                                    <div class="text-2xl sm:text-3xl font-black text-[#C4B5FD]">4+</div>
+                                    <div class="text-[11px] text-[#9CA3AF] mt-1 font-medium">Active Channels Synced</div>
+                                </div>
+                            </div>
+
+                            <!-- Key Insight Box -->
+                            <div class="mt-4 p-4 rounded-2xl bg-[#111827]/70 border border-[#8B5CF6]/30">
+                                <span class="text-xs font-black uppercase text-[#8B5CF6] block mb-1">Key Insight:</span>
+                                <p class="text-xs text-[#D1D5DB] leading-relaxed">
+                                    Video-first storytelling distributed across Instagram Reels and YouTube generated strong organic audience retention and converted casual lifestyle viewers into active buyers.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ==========================================================================
+             TOOLS & PLATFORMS (Page 12 in PDF)
+             ========================================================================== -->
+        <section id="tools" class="py-16 sm:py-24 border-b border-[#374151]/80">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-12">
+                    <div>
+                        <h2 class="text-4xl sm:text-5xl font-black text-[#F9FAFB]">
+                            tools & platforms <span class="dot-accent">.</span>
+                        </h2>
+                    </div>
+                    <p class="text-xs sm:text-sm text-[#9CA3AF] max-w-md">
+                        Industry-grade software and platforms used to plan, optimize, and measure digital marketing campaigns.
+                    </p>
+                </div>
+
+                <!-- Tools Logos Grid (Exact Behance Amal Krishna Style Page 12) -->
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+                    
+                    <div class="p-5 rounded-2xl bg-[#1F2937] border border-[#374151] flex flex-col items-center justify-center text-center gap-2.5 hover:border-[#8B5CF6] transition-all">
+                        <i class="fa-brands fa-meta text-3xl text-[#8B5CF6]"></i>
+                        <span class="text-xs font-bold text-[#F9FAFB]">Meta Ads</span>
+                    </div>
+
+                    <div class="p-5 rounded-2xl bg-[#1F2937] border border-[#374151] flex flex-col items-center justify-center text-center gap-2.5 hover:border-[#8B5CF6] transition-all">
+                        <i class="fa-brands fa-google text-3xl text-[#C4B5FD]"></i>
+                        <span class="text-xs font-bold text-[#F9FAFB]">Google Ads</span>
+                    </div>
+
+                    <div class="p-5 rounded-2xl bg-[#1F2937] border border-[#374151] flex flex-col items-center justify-center text-center gap-2.5 hover:border-[#8B5CF6] transition-all">
+                        <i class="fa-solid fa-chart-simple text-3xl text-[#8B5CF6]"></i>
+                        <span class="text-xs font-bold text-[#F9FAFB]">Google Analytics</span>
+                    </div>
+
+                    <div class="p-5 rounded-2xl bg-[#1F2937] border border-[#374151] flex flex-col items-center justify-center text-center gap-2.5 hover:border-[#8B5CF6] transition-all">
+                        <i class="fa-solid fa-magnifying-glass-chart text-3xl text-[#C4B5FD]"></i>
+                        <span class="text-xs font-bold text-[#F9FAFB]">Search Console</span>
+                    </div>
+
+                    <div class="p-5 rounded-2xl bg-[#1F2937] border border-[#374151] flex flex-col items-center justify-center text-center gap-2.5 hover:border-[#8B5CF6] transition-all">
+                        <i class="fa-solid fa-chart-pie text-3xl text-[#8B5CF6]"></i>
+                        <span class="text-xs font-bold text-[#F9FAFB]">SEMrush</span>
+                    </div>
+
+                    <div class="p-5 rounded-2xl bg-[#1F2937] border border-[#374151] flex flex-col items-center justify-center text-center gap-2.5 hover:border-[#8B5CF6] transition-all">
+                        <i class="fa-solid fa-magnifying-glass text-3xl text-[#C4B5FD]"></i>
+                        <span class="text-xs font-bold text-[#F9FAFB]">Ahrefs</span>
+                    </div>
+
+                    <div class="p-5 rounded-2xl bg-[#1F2937] border border-[#374151] flex flex-col items-center justify-center text-center gap-2.5 hover:border-[#8B5CF6] transition-all">
+                        <i class="fa-solid fa-film text-3xl text-[#8B5CF6]"></i>
+                        <span class="text-xs font-bold text-[#F9FAFB]">Premiere Pro</span>
+                    </div>
+
+                    <div class="p-5 rounded-2xl bg-[#1F2937] border border-[#374151] flex flex-col items-center justify-center text-center gap-2.5 hover:border-[#8B5CF6] transition-all">
+                        <i class="fa-solid fa-video text-3xl text-[#C4B5FD]"></i>
+                        <span class="text-xs font-bold text-[#F9FAFB]">Filmora</span>
+                    </div>
+
+                    <div class="p-5 rounded-2xl bg-[#1F2937] border border-[#374151] flex flex-col items-center justify-center text-center gap-2.5 hover:border-[#8B5CF6] transition-all">
+                        <i class="fa-brands fa-shopify text-3xl text-[#8B5CF6]"></i>
+                        <span class="text-xs font-bold text-[#F9FAFB]">Shopify</span>
+                    </div>
+
+                    <div class="p-5 rounded-2xl bg-[#1F2937] border border-[#374151] flex flex-col items-center justify-center text-center gap-2.5 hover:border-[#8B5CF6] transition-all">
+                        <i class="fa-brands fa-wordpress text-3xl text-[#C4B5FD]"></i>
+                        <span class="text-xs font-bold text-[#F9FAFB]">WordPress</span>
+                    </div>
+
+                    <div class="p-5 rounded-2xl bg-[#1F2937] border border-[#374151] flex flex-col items-center justify-center text-center gap-2.5 hover:border-[#8B5CF6] transition-all">
+                        <i class="fa-solid fa-image text-3xl text-[#8B5CF6]"></i>
+                        <span class="text-xs font-bold text-[#F9FAFB]">Photoshop</span>
+                    </div>
+
+                    <div class="p-5 rounded-2xl bg-[#1F2937] border border-[#374151] flex flex-col items-center justify-center text-center gap-2.5 hover:border-[#8B5CF6] transition-all">
+                        <i class="fa-solid fa-table text-3xl text-[#C4B5FD]"></i>
+                        <span class="text-xs font-bold text-[#F9FAFB]">Sheets / Excel</span>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ==========================================================================
+             FEATURED BRANDS (Page 12 in PDF)
+             ========================================================================== -->
+        <section class="py-16 sm:py-20 border-b border-[#374151]/80 bg-[#161F30]/30">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                
+                <h2 class="text-3xl sm:text-4xl font-black text-[#F9FAFB] mb-3">
+                    featured brands <span class="dot-accent">.</span>
+                </h2>
+                <p class="text-xs sm:text-sm text-[#9CA3AF] mb-10">
+                    Brands and agencies I've collaborated with across multiple industries.
+                </p>
+
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
+                    <div class="p-5 rounded-2xl bg-[#1F2937] border border-[#374151] flex flex-col items-center justify-center">
+                        <span class="text-lg font-black text-[#F9FAFB]">SIPL AUTOMOTIVES</span>
+                        <span class="text-[11px] text-[#8B5CF6] mt-1 font-semibold">Manufacturing & Tech</span>
+                    </div>
+                    <div class="p-5 rounded-2xl bg-[#1F2937] border border-[#374151] flex flex-col items-center justify-center">
+                        <span class="text-lg font-black text-[#F9FAFB]">KEIZO LONDON</span>
+                        <span class="text-[11px] text-[#C4B5FD] mt-1 font-semibold">Lifestyle & Fashion</span>
+                    </div>
+                    <div class="p-5 rounded-2xl bg-[#1F2937] border border-[#374151] flex flex-col items-center justify-center">
+                        <span class="text-lg font-black text-[#F9FAFB]">VMITR NETWORK</span>
+                        <span class="text-[11px] text-[#8B5CF6] mt-1 font-semibold">B2B Platform</span>
+                    </div>
+                    <div class="p-5 rounded-2xl bg-[#1F2937] border border-[#374151] flex flex-col items-center justify-center">
+                        <span class="text-lg font-black text-[#F9FAFB]">HIGH IN DIGITAL</span>
+                        <span class="text-[11px] text-[#C4B5FD] mt-1 font-semibold">Digital Agency</span>
+                    </div>
+                </div>
+
+                <div class="mt-8 text-xs font-bold text-[#6B7280]">
+                    4+ Brands • Multiple Industries • Real Marketing Experience
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ==========================================================================
+             THANK YOU ! / CONTACT (Page 13 in PDF)
+             ========================================================================== -->
+        <section id="contact" class="py-16 sm:py-24">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="p-8 sm:p-12 rounded-3xl bg-[#1F2937] border border-[#374151] shadow-2xl">
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                        
+                        <!-- Left Details (Page 13 in PDF) -->
+                        <div class="lg:col-span-7 space-y-6">
+                            <div>
+                                <h2 class="text-4xl sm:text-5xl font-black text-[#F9FAFB]">
+                                    thank you <span class="text-[#8B5CF6]">!</span>
+                                </h2>
+                                <p class="text-sm font-semibold text-[#C4B5FD] mt-1">
+                                    Looking forward to working with you.
+                                </p>
+                            </div>
+
+                            <div class="space-y-3 text-sm text-[#D1D5DB] pt-2">
+                                <a href="tel:9315016935" class="flex items-center gap-3 hover:text-[#C4B5FD] transition-colors">
+                                    <div class="w-8 h-8 rounded-lg bg-[#111827] text-[#8B5CF6] flex items-center justify-center text-sm border border-[#374151]">
+                                        <i class="fa-solid fa-phone"></i>
+                                    </div>
+                                    <span class="font-bold">+91 9315016935</span>
+                                </a>
+
+                                <a href="https://www.linkedin.com/in/manish-baghel-04bb0425a/" target="_blank" class="flex items-center gap-3 hover:text-[#C4B5FD] transition-colors">
+                                    <div class="w-8 h-8 rounded-lg bg-[#111827] text-[#8B5CF6] flex items-center justify-center text-sm border border-[#374151]">
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                    </div>
+                                    <span class="font-bold">linkedin.com/in/manish-baghel</span>
+                                </a>
+
+                                <a href="mailto:manishbaghel3495@gmail.com" class="flex items-center gap-3 hover:text-[#C4B5FD] transition-colors">
+                                    <div class="w-8 h-8 rounded-lg bg-[#111827] text-[#8B5CF6] flex items-center justify-center text-sm border border-[#374151]">
+                                        <i class="fa-solid fa-envelope"></i>
+                                    </div>
+                                    <span class="font-bold break-all">manishbaghel3495@gmail.com</span>
+                                </a>
+
+                                <div class="flex items-center gap-3 text-[#9CA3AF]">
+                                    <div class="w-8 h-8 rounded-lg bg-[#111827] text-[#8B5CF6] flex items-center justify-center text-sm border border-[#374151]">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                    </div>
+                                    <span>Shiv Vihar, Karawal Nagar, Delhi, India</span>
+                                </div>
+                            </div>
+
+                            <div class="pt-4 flex flex-wrap gap-3">
+                                <a href="https://wa.me/919315016935?text=Hi%20Manish%2C%20I%20saw%20your%20portfolio!" 
+                                   target="_blank"
+                                   class="px-6 py-3.5 rounded-xl bg-[#8B5CF6] hover:bg-[#7C3AED] text-[#F9FAFB] text-xs font-bold flex items-center gap-2 transition-all shadow-lg shadow-[#8B5CF6]/30">
+                                    <i class="fa-brands fa-whatsapp text-base"></i>
+                                    <span>Direct WhatsApp</span>
+                                </a>
+                                <a href="https://www.linkedin.com/in/manish-baghel-04bb0425a/" 
+                                   target="_blank"
+                                   class="px-5 py-3.5 rounded-xl bg-[#111827] hover:bg-[#374151] text-[#C4B5FD] hover:text-[#F9FAFB] border border-[#374151] text-xs font-bold flex items-center gap-2 transition-all">
+                                    <i class="fa-brands fa-linkedin text-base"></i>
+                                    <span>LinkedIn Profile</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Right Signature / Profile Brand (Page 13 in PDF) -->
+                        <div class="lg:col-span-5 flex flex-col items-center justify-center text-center p-6 rounded-2xl bg-[#111827] border border-[#374151]">
+                            <div class="w-24 h-24 rounded-full overflow-hidden border-2 border-[#8B5CF6] mb-4 bg-gradient-to-b from-[#1F2937] to-[#111827]">
+                                <img src="assets/profile-nobg.png" alt="Manish Baghel" class="w-full h-full object-cover object-top scale-125 pt-2">
+                            </div>
+                            <div class="font-black text-xl text-[#F9FAFB] tracking-wide">
+                                Manish Baghel
+                            </div>
+                            <div class="text-xs font-extrabold text-[#8B5CF6] tracking-widest uppercase mt-0.5">
+                                DIGITAL MARKETING SPECIALIST
+                            </div>
+                            <p class="text-[11px] text-[#6B7280] mt-3">
+                                Thank you for your time and consideration.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="py-8 bg-[#0B0F19] border-t border-[#374151] text-[#6B7280] text-xs">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div>
+                © 2026 <strong class="text-[#F9FAFB]">Manish Baghel</strong>. All rights reserved.
+            </div>
+            <div class="flex items-center gap-6">
+                <a href="https://www.linkedin.com/in/manish-baghel-04bb0425a/" target="_blank" class="hover:text-[#C4B5FD] transition-colors flex items-center gap-1.5">
+                    <i class="fa-brands fa-linkedin text-[#8B5CF6]"></i>
+                    <span>LinkedIn</span>
+                </a>
+                <a href="https://siplautomotives.com/" target="_blank" class="hover:text-[#C4B5FD] transition-colors">SIPL Automotives</a>
+                <a href="https://keizo.in/" target="_blank" class="hover:text-[#C4B5FD] transition-colors">KEIZO</a>
+                <a href="mailto:manishbaghel3495@gmail.com" class="hover:text-[#F9FAFB] transition-colors">Email</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Action Button (Mobile/Tablet/PC Responsive) -->
+    <a href="https://wa.me/919315016935?text=Hi%20Manish%2C%20I%20saw%20your%20portfolio!" 
+       target="_blank"
+       title="Quick WhatsApp Chat"
+       class="fixed fab-whatsapp right-4 sm:right-6 z-40 w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-emerald-500 text-white flex items-center justify-center shadow-lg shadow-emerald-500/40 hover:scale-110 hover:bg-emerald-400 transition-all duration-300">
+        <i class="fa-brands fa-whatsapp text-xl sm:text-2xl"></i>
+    </a>
+
+    <!-- External JavaScript File -->
+    <script src="script.js"></script>
+</body>
+</html>
